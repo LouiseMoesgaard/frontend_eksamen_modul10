@@ -1,0 +1,109 @@
+body {
+    margin-bottom: 10px;
+    background-color: #100F17;
+}
+
+main {
+    margin: 4rem 0;
+    padding: 5vw;
+}
+
+img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+.open {
+    max-height: 9000px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*** Generelle overskrifter ***/
+
+H1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 1.5rem;
+    color: #FEF5F4;
+}
+
+H2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin: 1.2rem 0 0.5rem 0;
+    color: #FEF5F4;
+}
+
+H3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin: 1rem 0;
+    color: #FEF5F4;
+}
+
+/** navigation **/
+
+
+nav {
+    height: 65px;
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 5;
+    /**background-color: ;*/
+}
+
+.logo H1 {
+    font-family: 'Megrim', cursive;
+     text-align: initial;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #FEF5F4;
+    margin-bottom: 0;
+}
+
+.burger_open {
+    width: 2.5rem;
+       display: inline-block;
+    margin: 0 auto;
+}
+
+.burger_close {
+    font-size: 2.5rem;
+}
+
+/** Footer **/
+
+.social.footer {
+    width: 325px;
+    margin: 0 auto;
+}
+
+.social.footer img {
+    width: 2.5rem;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social.footer a {
+    text-decoration: none;
+}
