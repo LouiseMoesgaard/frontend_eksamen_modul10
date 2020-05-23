@@ -6,8 +6,7 @@ async function getPage() {
     if (!id) {
         id = 1;
     }
-    if (id == 1)
-        const response = await fetch(endpoint + "posts/" + id);
+    const response = await fetch(endpoint + "posts/" + id);
     let post = await response.json();
 
     var main = document.querySelector("main");

@@ -1,16 +1,11 @@
 body {
     margin-bottom: 10px;
-    background-color: #100F17;
+    background-color: #100F1C;
 }
 
 main {
     margin: 4rem 0;
     padding: 5vw;
-    color: white;
-}
-
-main button {
-    color: white;
 }
 
 img {
@@ -38,8 +33,7 @@ H1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 2.5rem;
     text-align: center;
-    font-weight: 300;
-    font-style: normal;
+    font-weight: 400;
     margin-bottom: 1.5rem;
     color: #FEF5F4;
 }
@@ -47,8 +41,7 @@ H1 {
 H2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.7rem;
-    font-weight: 300;
-    font-style: normal;
+    font-weight: 400;
     text-align: center;
     margin: 1.2rem 0 0.5rem 0;
     color: #FEF5F4;
@@ -56,47 +49,128 @@ H2 {
 
 H3 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
     text-align: center;
     margin: 1rem 0;
     color: #FEF5F4;
 }
 
+p,
+li{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #FEF5F4;
+}
+
 /** navigation **/
 
-
 nav {
-    height: 65px;
     position: fixed;
     top: 0;
-    padding: 10px 0;
     width: 100%;
     z-index: 5;
-    /**background-color: ;*/
+    background-color:#100F17;
+}
+
+.menu_wrapper {
+    padding: 2.5vw 5vw;
 }
 
 .logo H1 {
     font-family: 'Megrim', cursive;
      text-align: initial;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #FEF5F4;
     margin-bottom: 0;
 }
 
 .burger_open {
-    width: 2.5rem;
-       display: inline-block;
+    width: 1.5rem;
+    display: inline-block;
+    margin: 0 auto;
+    float: right;
+}
+
+
+.sub_menu ul {
+    background-image: linear-gradient(#D32545,#FE7100);
+    height: 8vw;
+    list-style: none;
+     display: grid;
+    text-align: center;
+    padding: 0 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.sub_menu li a,
+.sub_menu li a:active,
+.sub_menu li a:link,
+.sub_menu li a:visited,
+.sub_menu li a:hover {
+    text-decoration: none;
+    color: #FEF5F4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 8vw;
+}
+
+
+.burger_close {
+    width: 1.5rem;
+    display: inline-block;
     margin: 0 auto;
 }
 
-.burger_close {
-    font-size: 2.5rem;
+nav .menu {
+    list-style: none;
+    margin: 0;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(#D32545,#FE7100);
 }
 
+nav .menu li {
+    /* al positionerigen af -burger close styres her*/
+    text-align: right;
+    margin: 2.5rem 5vw 0 0;
+}
+
+nav .menu li:first-child {
+    margin-top: 7.5px
+}
+
+nav .menu li a {
+    color: #FEF5F4;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+.social.mobile {
+    margin: 0 auto;
+     display: grid;
+    text-align: center;
+    grid-template-columns: 85px 85px 85px;
+  grid-template-rows: 85px 85px;
+  column-gap: 5px;
+}
+
+.social.mobile img {
+    width: 2.5rem;
+}
+
+
 /** Footer **/
+
+
 
 .social.footer {
     width: 325px;
