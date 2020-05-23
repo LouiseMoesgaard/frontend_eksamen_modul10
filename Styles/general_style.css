@@ -6,6 +6,11 @@ body {
 main {
     margin: 4rem 0;
     padding: 5vw;
+    color: white;
+}
+
+main button {
+    color: white;
 }
 
 img {
