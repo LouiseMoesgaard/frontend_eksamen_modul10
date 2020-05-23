@@ -49,10 +49,9 @@ H2 {
 
 H3 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     text-align: center;
-    margin: 1rem 0;
     color: #FEF5F4;
 }
 
@@ -171,6 +170,10 @@ nav .menu li a {
 /** Footer **/
 
 
+footer {
+    background-image: linear-gradient(#D32545,#FE7100);
+    padding: 2.5vw 5vw;
+}
 
 .social.footer {
     width: 325px;
