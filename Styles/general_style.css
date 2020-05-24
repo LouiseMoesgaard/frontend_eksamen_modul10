@@ -17,7 +17,8 @@ img {
     display: none;
 }
 
-.open {
+
+.open_colapse {
     max-height: 9000px;
 }
 
@@ -89,10 +90,77 @@ nav {
 }
 
 .burger_open {
+    width: 1.7rem;
+    height: 1.5rem;
+    display: inline-block;
+    margin: 5px auto;
+    position: relative;
+    float: right;
+}
+.burger_open::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.burger_open div {
+    height: 3px;
+    width: 100%;
+    background-color: #FEF5F4;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.open_menu .line1{
+    display: none;
+}
+.open_menu .line2 {
+    transform: rotate(45deg);
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.open_menu .line3 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.burger_close {
     width: 1.5rem;
     display: inline-block;
     margin: 0 auto;
-    float: right;
+}
+
+nav .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    background-image: linear-gradient(#D32545,#FE7100);
+}
+
+nav .menu li {
+    /* al positionerigen af -burger close styres her*/
+    text-align: right;
+    margin: 2.5rem 5vw 0 0;
+}
+
+nav .menu li:first-child {
+    margin-top: 7.5px
+}
+
+nav .menu li a {
+    color: #FEF5F4;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
 
@@ -117,40 +185,6 @@ nav {
     font-size: 1rem;
     font-weight: 400;
     line-height: 8vw;
-}
-
-
-.burger_close {
-    width: 1.5rem;
-    display: inline-block;
-    margin: 0 auto;
-}
-
-nav .menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
-    background-image: linear-gradient(#D32545,#FE7100);
-}
-
-nav .menu li {
-    /* al positionerigen af -burger close styres her*/
-    text-align: right;
-    margin: 2.5rem 5vw 0 0;
-}
-
-nav .menu li:first-child {
-    margin-top: 7.5px
-}
-
-nav .menu li a {
-    color: #FEF5F4;
-    text-decoration: none;
-    font-size: 1rem;
 }
 
 
@@ -183,7 +217,14 @@ nav .menu li a {
 
 /** Footer **/
 
+ .h3_footer {
+     font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    color: #FEF5F4;
 
+}
 footer {
     background-image: linear-gradient(#D32545,#FE7100);
     padding: 2.5vw 5vw;

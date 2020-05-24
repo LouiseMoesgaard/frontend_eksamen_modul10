@@ -3,10 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const nav = document.querySelector("nav .menu");
 
     document.querySelector(".burger_open").addEventListener("click", function () {
-        nav.classList.remove("hide")
-    })
-    document.querySelector(".burger_close").addEventListener("click", function () {
-        nav.classList.add("hide")
+        nav.classList.toggle("hide")
+        this.classList.toggle("open_menu")
     })
 
 
@@ -29,4 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
+
+
 });
