@@ -81,7 +81,7 @@ nav {
 
 .logo H1 {
     font-family: 'Megrim', cursive;
-     text-align: initial;
+    text-align: initial;
     display: inline-block;
     font-size: 1.7rem;
     color: #FEF5F4;
@@ -100,7 +100,7 @@ nav {
     background-image: linear-gradient(#D32545,#FE7100);
     height: 8vw;
     list-style: none;
-     display: grid;
+    display: grid;
     text-align: center;
     padding: 0 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -129,6 +129,7 @@ nav {
 nav .menu {
     list-style: none;
     margin: 0;
+    padding: 0;
     height: 100vh;
     position: fixed;
     right: 0;
@@ -154,7 +155,7 @@ nav .menu li a {
 
 
 .social.mobile {
-    margin: 0 auto;
+    margin: 10rem auto 0 auto;
      display: grid;
     text-align: center;
     grid-template-columns: 85px 85px 85px;
@@ -164,6 +165,19 @@ nav .menu li a {
 
 .social.mobile img {
     width: 2.5rem;
+}
+
+#scroll_btn {
+  position: fixed;
+  bottom: 45vw;
+  right: 5vw;
+  z-index: 4;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(#D32545,#FE7100);
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
 
 
