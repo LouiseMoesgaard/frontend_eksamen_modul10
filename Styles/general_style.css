@@ -24,15 +24,16 @@ H3 {
     font-weight: 400;
     color: #FEF5F4;
 }
+
 H3 a {
-    font-size: inherit!important;
-    text-decoration: underline!important;
+    font-size: inherit !important;
+    text-decoration: underline !important;
 }
 
 p,
 li,
 input,
-textarea{
+textarea {
     font-family: 'Open Sans', sans-serif;
     line-height: 2rem;
     font-weight: 400;
@@ -41,31 +42,36 @@ textarea{
     color: #FEF5F4;
 }
 
-.gridwrapper{
+.gridwrapper {
     display: grid;
     grid-template-rows: repeat(auto-fill);
     grid-gap: 30px;
     margin: 30px 0;
 }
 
-.gradientwrapper { /**Gradient for alle bokse**/
+.gradientwrapper {
+    /**Gradient for alle bokse**/
     padding: 30px 15px;
-    background-image: linear-gradient(#D32545,#FE7100);
+    background-image: linear-gradient(#D32545, #FE7100);
     border-radius: 10px;
 }
 
+/**Billeder**/
+figure img {
+    border-radius: 10px;
+}
 
 /********* Frontpage ************/
 
 /** Splash **/
 
 .frontpage {
-  margin-top: 0 !important;
-  padding: 0 !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
 }
 
 #splash {
-  height: 100vh;
+    height: 100vh;
     background-image: url("../Billeder_Videoer/splash.png");
     background-size: cover;
     background-position: 45% 10%;
@@ -79,33 +85,35 @@ textarea{
 #videos H1 {
     margin 0;
 }
+
 .gradientwrapper video {
-  width: 100%;
+    width: 100%;
 }
 
 .gradientwrapper .video_player {
-  position: relative;
-  width: 100%;
-  height: 170px;
-  margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 170px;
+    margin: 0 auto;
 }
 
 .gradientwrapper .video_player iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.youtube_subscribe p { /** subscribekknap **/
+.youtube_subscribe p {
+    /** subscribekknap **/
     display: inline-block;
     width: 75vw;
 }
 
 .youtube_subscribe img {
-  display: inline-block;
-  width: 50px;
+    display: inline-block;
+    width: 50px;
 }
 
 /** Photos **/
@@ -123,7 +131,7 @@ textarea{
 .pr_btn div {
     width: 70%;
     margin: 30px auto 0 auto;
-    background-image: linear-gradient(#D32545,#FE7100);
+    background-image: linear-gradient(#D32545, #FE7100);
     border-radius: 10px;
 }
 
@@ -137,7 +145,8 @@ form {
     width: 100%;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 5px;
     width: 100%;
     border-radius: 10px;
@@ -149,11 +158,11 @@ input, textarea {
     display: block;
     width: 100px;
     border: none;
-    background-image: linear-gradient(#D32545,#FE7100);
+    background-image: linear-gradient(#D32545, #FE7100);
 }
 
 .gradient_border {
-    background-image: linear-gradient(#D32545,#FE7100);
+    background-image: linear-gradient(#D32545, #FE7100);
     padding: 2px;
     border-radius: 10px;
 }
@@ -164,11 +173,7 @@ input, textarea {
 /************ Music and lyrics ************/
 
 .open_colapse {
-  max-height: 9000px;
+    max-height: 9000px;
 }
-/************ Concerts ************/
 
-/**Billeder**/
-figure img {
-  border-radius: 10px;
-}
+/************ Concerts ************/
