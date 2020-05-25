@@ -1,107 +1,112 @@
 /*** Generelle overskrifter ***/
 
 H1 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 1.5rem;
-    color: #FEF5F4;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #FEF5F4;
 }
 
 H2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 30px 0;
-    color: #FEF5F4;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 30px 0;
+  color: #FEF5F4;
 }
 
 H3 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 400;
-    text-align: center;
-    color: #FEF5F4;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  color: #FEF5F4;
 }
 
 p,
-li{
-    font-family: 'Open Sans', sans-serif;
-    line-height: 2rem;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-    color: #FEF5F4;
+li {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #FEF5F4;
 }
 
 /** Splash **/
 
 .frontpage {
-    margin-top: 0 !important;
-    padding: 0 !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
 }
 
 #splash {
   height: 100vh;
-    background-image: url(Billeder_Videoer/);
-    background-size: cover;
-    background-position: 50% 31%;
-    max-width: none;
+  background-image: url(Billeder_Videoer/);
+  background-size: cover;
+  background-position: 50% 31%;
+  max-width: none;
 }
 
-.gridwrapper{
-    display: grid;
-    grid-template-rows: repeat(auto-fill);
-    grid-gap: 30px;
-    margin: 30px 0;
+.gridwrapper {
+  display: grid;
+  grid-template-rows: repeat(auto-fill);
+  grid-gap: 30px;
+  margin: 30px 0;
 }
 
 /**Gradient for alle bokse**/
 .gradientwrapper {
-    padding: 30px 15px;
-    background-image: linear-gradient(#D32545,#FE7100);
-    border-radius: 10px;
+  padding: 30px 15px;
+  background-image: linear-gradient(#D32545, #FE7100);
+  border-radius: 10px;
 }
 
 /**Video**/
 .gradientwrapper video {
-    width: 100%;
+  width: 100%;
 }
 
 .gradientwrapper .video_player {
-    position: relative;
-    width: 100%;
-    height: 170px;
-    margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 170px;
+  margin: 0 auto;
 }
 
 .gradientwrapper .video_player iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /** subscribekknap **/
 .youtube_subscribe p {
-    display: inline-block;
-    width: 75vw;
+  display: inline-block;
+  width: 75vw;
 }
+
 .youtube_subscribe img {
-    display: inline-block;
-    width: 50px;
+  display: inline-block;
+  width: 50px;
 }
 
 
 
 .open_colapse {
-    max-height: 9000px;
+  max-height: 9000px;
 }
 
 #reviews .gradientwrapper {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
+/**Billeder**/
+figure img {
+  border-radius: 10px;
+}
