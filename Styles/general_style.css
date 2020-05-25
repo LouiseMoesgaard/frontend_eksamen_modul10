@@ -60,8 +60,8 @@ textarea{
 /** Splash **/
 
 .frontpage {
-    margin-top: 0 !important;
-    padding: 0 !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
 }
 
 #splash {
@@ -80,31 +80,32 @@ textarea{
     margin 0;
 }
 .gradientwrapper video {
-    width: 100%;
+  width: 100%;
 }
 
 .gradientwrapper .video_player {
-    position: relative;
-    width: 100%;
-    height: 170px;
-    margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 170px;
+  margin: 0 auto;
 }
 
 .gradientwrapper .video_player iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .youtube_subscribe p { /** subscribekknap **/
     display: inline-block;
     width: 75vw;
 }
+
 .youtube_subscribe img {
-    display: inline-block;
-    width: 50px;
+  display: inline-block;
+  width: 50px;
 }
 
 /** Photos **/
@@ -163,8 +164,11 @@ input, textarea {
 /************ Music and lyrics ************/
 
 .open_colapse {
-    max-height: 9000px;
+  max-height: 9000px;
 }
-
 /************ Concerts ************/
 
+/**Billeder**/
+figure img {
+  border-radius: 10px;
+}
