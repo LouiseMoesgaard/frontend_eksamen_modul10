@@ -65,6 +65,47 @@ li{
     color: #FEF5F4;
 }
 
+/** Splash **/
+
+.frontpage {
+    margin-top: 0 !important;
+    padding: 0 !important;
+}
+
+.splash {
+    position: relative;
+    height: 100vh;
+    width:
+    max-width: none;
+}
+}
+
+/**Video**/
+
+video {
+    width: 100%;
+}
+
+}
+
+/*
+.video_player {
+    position: relative;
+    width: 100%;
+    height: 50vw;
+    margin: 0 auto;
+}
+
+.video_player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+*/
+
+
 /** navigation **/
 
 nav {
