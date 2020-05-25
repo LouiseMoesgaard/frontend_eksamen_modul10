@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    margin: 4rem 0;
+    margin: 6rem 0 4rem 0;
     padding: 5vw;
 }
 
@@ -136,17 +136,24 @@ nav .menu li a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.sub_menu li a,
-.sub_menu li a:active,
-.sub_menu li a:link,
-.sub_menu li a:visited,
-.sub_menu li a:hover {
+a,
+a:active,
+a:link,
+a:visited {
     text-decoration: none;
     color: #FEF5F4;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 8vw;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p a {
+    text-decoration: underline !important;
 }
 
 

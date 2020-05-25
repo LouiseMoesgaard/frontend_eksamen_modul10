@@ -1,11 +1,12 @@
-/*** Generelle overskrifter ***/
+/************* Generelt ************/
 
 H1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 2.5rem;
     text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
     font-weight: 400;
-    margin-bottom: 1.5rem;
     color: #FEF5F4;
 }
 
@@ -13,8 +14,7 @@ H2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
-    text-align: center;
-    margin: 30px 0;
+    text-transform: uppercase;
     color: #FEF5F4;
 }
 
@@ -22,12 +22,17 @@ H3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
-    text-align: center;
     color: #FEF5F4;
+}
+H3 a {
+    font-size: inherit!important;
+    text-decoration: underline!important;
 }
 
 p,
-li{
+li,
+input,
+textarea{
     font-family: 'Open Sans', sans-serif;
     line-height: 2rem;
     font-weight: 400;
@@ -35,6 +40,22 @@ li{
     font-size: 1rem;
     color: #FEF5F4;
 }
+
+.gridwrapper{
+    display: grid;
+    grid-template-rows: repeat(auto-fill);
+    grid-gap: 30px;
+    margin: 30px 0;
+}
+
+.gradientwrapper { /**Gradient for alle bokse**/
+    padding: 30px 15px;
+    background-image: linear-gradient(#D32545,#FE7100);
+    border-radius: 10px;
+}
+
+
+/********* Frontpage ************/
 
 /** Splash **/
 
@@ -45,27 +66,19 @@ li{
 
 #splash {
   height: 100vh;
-    background-image: url(Billeder_Videoer/);
+    background-image: url("../Billeder_Videoer/splash.png");
     background-size: cover;
-    background-position: 50% 31%;
+    background-position: 45% 10%;
     max-width: none;
 }
 
-.gridwrapper{
-    display: grid;
-    grid-template-rows: repeat(auto-fill);
-    grid-gap: 30px;
-    margin: 30px 0;
-}
+/** About **/
 
-/**Gradient for alle bokse**/
-.gradientwrapper {
-    padding: 30px 15px;
-    background-image: linear-gradient(#D32545,#FE7100);
-    border-radius: 10px;
-}
 
-/**Video**/
+/** Videos **/
+#videos H1 {
+    margin 0;
+}
 .gradientwrapper video {
     width: 100%;
 }
@@ -85,8 +98,7 @@ li{
     height: 100%;
 }
 
-/** subscribekknap **/
-.youtube_subscribe p {
+.youtube_subscribe p { /** subscribekknap **/
     display: inline-block;
     width: 75vw;
 }
@@ -95,13 +107,64 @@ li{
     width: 50px;
 }
 
+/** Photos **/
 
+/** revirews **/
+
+#reviews .gradientwrapper {
+    margin-bottom: 30px;
+}
+
+
+
+/************ Contact  ************/
+
+.pr_btn div {
+    width: 70%;
+    margin: 30px auto 0 auto;
+    background-image: linear-gradient(#D32545,#FE7100);
+    border-radius: 10px;
+}
+
+.pr_btn H3 {
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form {
+    width: 100%;
+}
+
+input, textarea {
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+#send {
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    border: none;
+    background-image: linear-gradient(#D32545,#FE7100);
+}
+
+.gradient_border {
+    background-image: linear-gradient(#D32545,#FE7100);
+    padding: 2px;
+    border-radius: 10px;
+}
+
+
+
+
+/************ Music and lyrics ************/
 
 .open_colapse {
     max-height: 9000px;
 }
 
-#reviews .gradientwrapper {
-    margin-bottom: 30px;
-}
+/************ Concerts ************/
 
