@@ -54,3 +54,8 @@ async function getAlbums() {
     const response = await fetch(endpoint + "album/");
     return await response.json()
 }
+
+async function getSingles() {
+    const response = await fetch(endpoint + "singles/");
+    return await response.json()
+}

@@ -32,10 +32,12 @@ function scrollFunction() {
 
 
 function buildLyrics() {
+    console.log("hej")
     let lyricDOM = document.querySelector(".lyrics");
     let template = document.querySelector("template#collapse")
     if(template){
         getLyrics().then(lyrics=>{
+            console.log(lyrics)
             lyrics.forEach(lyric => {
                 let collapse = template.content.cloneNode(true);
                 collapse.querySelector(".title").innerHTML = lyric.title.rendered;
@@ -65,14 +67,32 @@ function buildAlbums() {
         getAlbums().then(albums=>{
             albums.forEach(album=>{
                 let box = template.content.cloneNode(true);
-                console.log(box)
                 box.querySelector("img").setAttribute("src", album.image.guid);
-                box.querySelector("h2").innerHTML = album.title;
+                box.querySelector("h2").innerHTML = album.title.rendered;
                 box.querySelector(".year").innerHTML = album.year.substring(0,3);
                 box.querySelector(".links .listen").setAttribute("href", album.listen_here);
                 box.querySelector(".links .buy").setAttribute("href", album.buy_here);
 
                 albumDOM.appendChild(box);
+            })
+        })
+    }
+}
+
+function buildSingles() {
+    let singleDOM = document.querySelector(".singles");
+    let template = document.querySelector("template#single");
+    if(template) {
+        getSingles().then(singles=>{
+            singles.forEach(single=>{
+                let box = template.content.cloneNode(true);
+                box.querySelector("img").setAttribute("src", single.image.guid);
+                box.querySelector("h2").innerHTML = single.title.rendered;
+                box.querySelector(".year").innerHTML = single.year.substring(0,3);
+                box.querySelector(".links .listen").setAttribute("href", single.listen_here);
+                box.querySelector(".links .buy").setAttribute("href", single.buy_here);
+
+                singleDOM.appendChild(box);
             })
         })
     }
@@ -82,6 +102,7 @@ function buildAlbums() {
 function APIHook(){
     buildLyrics();
     buildAlbums();
+    buildSingles();
 }
 
 
