@@ -47,6 +47,10 @@ async function getGallery() {
 
 async function getLyrics() {
     const response = await fetch(endpoint + "lyric/");
+    return await response.json()
+}
 
+async function getAlbums() {
+    const response = await fetch(endpoint + "album/");
     return await response.json()
 }

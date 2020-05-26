@@ -56,12 +56,32 @@ function buildLyrics() {
             })
         });
     }
+}
 
+function buildAlbums() {
+    let albumDOM = document.querySelector(".albums");
+    let template = document.querySelector("template#album");
+    if(template) {
+        getAlbums().then(albums=>{
+            albums.forEach(album=>{
+                let box = template.content.cloneNode(true);
+                console.log(box)
+                box.querySelector("img").setAttribute("src", album.image.guid);
+                box.querySelector("h2").innerHTML = album.title;
+                box.querySelector(".year").innerHTML = album.year.substring(0,3);
+                box.querySelector(".links .listen").setAttribute("href", album.listen_here);
+                box.querySelector(".links .buy").setAttribute("href", album.buy_here);
+
+                albumDOM.appendChild(box);
+            })
+        })
+    }
 
 }
 
 function APIHook(){
     buildLyrics();
+    buildAlbums();
 }
 
 
