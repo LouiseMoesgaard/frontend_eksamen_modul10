@@ -69,7 +69,7 @@ function buildAlbums() {
                 let box = template.content.cloneNode(true);
                 box.querySelector("img").setAttribute("src", album.image.guid);
                 box.querySelector("h2").innerHTML = album.title.rendered;
-                box.querySelector(".year").innerHTML = album.year.substring(0,3);
+                box.querySelector(".year").innerHTML = album.year.substring(0,4);
                 box.querySelector(".links .listen").setAttribute("href", album.listen_here);
                 box.querySelector(".links .buy").setAttribute("href", album.buy_here);
 
@@ -88,7 +88,7 @@ function buildSingles() {
                 let box = template.content.cloneNode(true);
                 box.querySelector("img").setAttribute("src", single.image.guid);
                 box.querySelector("h2").innerHTML = single.title.rendered;
-                box.querySelector(".year").innerHTML = single.year.substring(0,3);
+                box.querySelector(".year").innerHTML = single.year.substring(0,4);
                 box.querySelector(".links .listen").setAttribute("href", single.listen_here);
                 box.querySelector(".links .buy").setAttribute("href", single.buy_here);
 
