@@ -289,9 +289,15 @@ textarea {
   font-size: 1rem;
 }
 
+.album .year,
+.single .year {
+  font-size: 0.8rem;
+}
+
 .album div,
 .single div {
   margin: 5vw 0;
+  width: 45vw;
 }
 
 .album .links,
@@ -302,3 +308,81 @@ textarea {
 }
 
 /************ Concerts ************/
+
+.concert {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  background-image: linear-gradient(#D32545, #FE7100);
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.concert img {
+  width: 35vw;
+  height: 35vw;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.concert h2 {
+  text-align: center;
+}
+
+.concert div {
+  margin: 2vw 0 2vw 2vw;
+  width: 40vw;
+}
+
+.concert .desc {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin-bottom: 1vw;
+}
+
+.concert .place {
+  font-size: 0.5rem;
+  line-height: 1rem;
+  position: absolute;
+  bottom: 12vw;
+  left: 41vw;
+}
+
+.concert .time {
+  font-size: 0.5rem;
+  line-height: 1rem;
+  position: absolute;
+  bottom: 8vw;
+  left: 41vw;
+}
+
+.concert .place_icon {
+  background-image: url("../Ikoner/lokation.svg");
+  background-size: cover;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  bottom: 13vw;
+  left: 37vw;
+}
+
+.concert .time_icon {
+  background-image: url("../Ikoner/tid.svg");
+  background-size: cover;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  bottom: 9vw;
+  left: 37vw;
+}
+
+.concert .buy {
+  position: absolute;
+  bottom: 2vw;
+  right: 3vw;
+}
