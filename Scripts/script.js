@@ -33,7 +33,6 @@ function topFunction() {
 
 
 function buildLyrics() {
-  console.log("hej")
   let lyricDOM = document.querySelector(".lyrics");
   let template = document.querySelector("template#collapse")
   if (template) {
@@ -121,9 +120,76 @@ function buildConcerts() {
 
 }
 
+function buildGalleries() {
+  let galleryDOM = document.querySelector("#photos_wrapper");
+  let template = document.querySelector("template#gallery");
+  if (template) {
+    getGalleries().then(galleries => {
+      galleries.forEach(gallery => {
+        let box = template.content.cloneNode(true);
+
+        box.querySelector("h2").innerHTML = gallery.title.rendered;
+          gallery.images.forEach(image =>{
+              let img = document.createElement("img");
+              img.setAttribute("src", image.guid);
+              box.querySelector(".slide").appendChild(img);
+          })
+
+        galleryDOM.appendChild(box);
+      })
+
+        document.querySelectorAll(".left").forEach(left =>{
+
+            left.addEventListener("click", (e)=>{
+            let gallery = e.target.parentNode;
+            let slide = gallery.querySelector(".slide");
+            let currentOffset = parseInt(slide.style.left, 10);
+            if(!currentOffset) {
+                currentOffset = 0;
+            }
+
+            let imageNr = slide.childElementCount;
+            if(currentOffset == 0){
+               slide.style.left = -1*(gallery.offsetWidth*(imageNr-1)) + "px";
+            } else {
+                slide.style.left = currentOffset + gallery.offsetWidth + "px";
+            }
+        })
+
+        })
+
+         document.querySelectorAll(".right").forEach(right =>{
+            right.addEventListener("click", (e)=>{
+            let gallery = e.target.parentNode;
+            let slide = gallery.querySelector(".slide");
+            let currentOffset = parseInt(slide.style.left, 10);
+            if(!currentOffset) {
+                currentOffset = 0;
+            }
+
+            let imageNr = slide.childElementCount;
+            if(currentOffset == -1*(gallery.offsetWidth*(imageNr-1))){
+               slide.style.left = 0;
+            } else {
+                slide.style.left = currentOffset - gallery.offsetWidth + "px";
+            }
+
+        })
+
+         })
+
+
+
+    })
+
+  }
+}
+
+
 function APIHook() {
   buildLyrics();
   buildAlbums();
   buildSingles();
   buildConcerts();
+    buildGalleries();
 }
