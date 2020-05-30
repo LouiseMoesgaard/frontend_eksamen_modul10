@@ -1,1 +1,268 @@
-@media (min-width:801px) {}
+@media (min-width:1100px) {
+
+  main {
+    margin: 6rem 0 0 0;
+    padding: 2vw;
+  }
+
+  .marginwrapper {
+    margin: 0 12vw;
+    padding: 0 0 0 2vw;
+  }
+
+  .hide_m {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  h1 {
+    margin-top: 100px;
+  }
+
+  h2 {
+    margin-top: 50px;
+  }
+
+  h3 {
+    margin-top: 50px;
+  }
+
+  .gridwrapper h1 {
+    margin-top: 0;
+  }
+
+  .gridwrapper {
+    margin: 100px 0;
+  }
+
+  /** navigation **/
+
+  .menu_wrapper {
+    padding: 1vw 1vw;
+    height: 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu_wrapper h1 {
+    margin-top: 0;
+  }
+
+  .burger_open {
+    display: none;
+  }
+
+  .burger_open::after {}
+
+  .burger_open div {
+    display: none;
+  }
+
+  nav .menu {
+    display: none;
+  }
+
+  .social.desktop {
+    display: grid;
+    grid-template-columns: 65px 65px 65px 65px 65px 65px;
+    grid-template-rows: 65px;
+    grid-gap: 10px;
+    text-align: center;
+  }
+
+  .social.desktop img {
+    width: 2rem;
+    margin: 0;
+    line-height: 65px;
+  }
+
+  .desktop_menu {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 60px;
+    grid-gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  .sub_menu ul {
+    background-image: linear-gradient(#D32545, #FE7100);
+    height: 2vw;
+    list-style: none;
+    display: grid;
+    text-align: center;
+    padding: 0 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  a,
+  a:active,
+  a:link,
+  a:visited {
+    line-height: 2vw;
+  }
+
+  .social.mobile {
+    display: none;
+  }
+
+  #scroll_btn {
+    bottom: 1vw;
+    left: 95vw;
+  }
+
+  #scroll_btn img {
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+  }
+
+
+  /************* Generelt ************/
+
+  .gridwrapper {
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /********* Frontpage ************/
+
+  /** Splash **/
+
+  .splash_text {
+    bottom: 150px;
+  }
+
+  .splash.social {
+    display: none;
+  }
+
+  /** About **/
+
+
+  /** Videos **/
+
+  .gradientwrapper .video_player {
+    height: 300px;
+  }
+
+  .youtube_subscribe p {
+    width: 25vw;
+  }
+
+  /** Photos **/
+
+  #photos_wrapper h2 {
+    margin-top: 50px;
+  }
+
+  /** revirews **/
+
+  #reviews .gradientwrapper {
+    width: 80%;
+  }
+
+  #reviews .l1 {}
+
+  #reviews .r2 {
+    margin-left: 20%;
+  }
+
+  /************ Contact  ************/
+  #contact h3 {
+    margin-bottom: 50px;
+  }
+
+  /************ Music and lyrics ************/
+
+  .collapse {
+    max-height: 4vw;
+    padding: 0 1vw 1vw;
+  }
+
+  .collapse .title {
+    line-height: 4vw;
+
+  }
+
+  .gridwrapper.albums,
+  .gridwrapper.singles,
+  .gridwrapper.lyrics {
+    margin-top: 20px;
+  }
+
+  .collapse .arrow {
+    width: 2vw;
+    height: 2vw;
+    margin: 1vw 10px;
+  }
+
+  .album img,
+  .single img {
+    width: 11vw;
+    height: 11vw;
+    margin: 1.5vw;
+  }
+
+  .album h2,
+  .single h2 {
+    font-size: 1rem;
+  }
+
+  .album .year,
+  .single .year {
+    font-size: 0.8rem;
+  }
+
+  .album div,
+  .single div {
+    margin: 1.5vw 0;
+    width: 16vw;
+  }
+
+  .album .links,
+  .single .links {
+    bottom: 1vw;
+    right: 1vw;
+  }
+
+  /************ Concerts ************/
+
+  .concert img {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .concert .place {
+    bottom: 5vw;
+    left: 19vw;
+  }
+
+  .concert .time {
+    font-size: 0.8rem;
+    bottom: 3vw;
+    left: 19vw;
+  }
+
+  .concert .place_icon {
+    bottom: 5vw;
+    left: 17vw;
+  }
+
+  .concert .time_icon {
+    bottom: 3vw;
+    left: 17vw;
+  }
+
+}
+
+
+}

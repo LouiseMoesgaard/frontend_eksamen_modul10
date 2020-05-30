@@ -164,6 +164,12 @@
     right: 2vw;
   }
 
+  .gridwrapper.lyrics,
+  .gradientwrapper.singles,
+  .gradientwrapper.albums {
+    align-items: flex-start;
+  }
+
   /************ Concerts ************/
 
   .concert img {
@@ -245,6 +251,11 @@
   .gridwrapper {
     grid-gap: 50px;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .gridwrapper img {
+    margin-top: 0;
   }
 
   /********* Frontpage ************/
