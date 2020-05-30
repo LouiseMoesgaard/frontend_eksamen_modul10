@@ -6,8 +6,8 @@
   }
 
   .marginwrapper {
-    margin: 0 12vw;
-    padding: 0 0 0 2vw;
+    margin: 0 20vw;
+    padding: 0 0 0;
   }
 
   .hide_m {
@@ -20,7 +20,7 @@
   }
 
   h1 {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   h2 {
@@ -42,8 +42,8 @@
   /** navigation **/
 
   .menu_wrapper {
-    padding: 1vw 1vw;
-    height: 6vw;
+    padding: 0 1vw;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,39 +63,43 @@
     display: none;
   }
 
+  nav .menu_pos {
+    display: none;
+  }
+
   nav .menu {
     display: none;
   }
 
   .social.desktop {
     display: grid;
-    grid-template-columns: 65px 65px 65px 65px 65px 65px;
-    grid-template-rows: 65px;
-    grid-gap: 10px;
+    grid-template-columns: 60px 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px;
+    grid-gap: 4px;
     text-align: center;
+    align-items: center;
   }
 
   .social.desktop img {
-    width: 2rem;
+    width: 30px;
     margin: 0;
-    line-height: 65px;
   }
 
   .desktop_menu {
     display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 60px;
-    grid-gap: 10px;
+    grid-template-columns: 110px 160px 110px;
+    grid-template-rows: 40px;
+    grid-gap: 0px;
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
-    line-height: 60px;
+    align-items: center;
   }
 
   .sub_menu ul {
     background-image: linear-gradient(#D32545, #FE7100);
-    height: 2vw;
+    height: 2.2vw;
     list-style: none;
     display: grid;
     text-align: center;
@@ -108,6 +112,7 @@
   a:link,
   a:visited {
     line-height: 2vw;
+    font-size: 0.9rem;
   }
 
   .social.mobile {
@@ -117,14 +122,35 @@
   #scroll_btn {
     bottom: 1vw;
     left: 95vw;
+    padding: 10px;
   }
 
   #scroll_btn img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin-top: 0;
   }
 
+
+  /** Footer **/
+
+  footer {
+    padding: 1vw 2vw;
+  }
+
+  .social.footer {
+    width: 325px;
+  }
+
+  .social.footer img {
+    width: 2rem;
+    display: inline-block;
+    margin: 20px 5px 0 5px;
+  }
+
+  .social.footer a {
+    text-decoration: none;
+  }
 
   /************* Generelt ************/
 
@@ -151,7 +177,7 @@
   /** Videos **/
 
   .gradientwrapper .video_player {
-    height: 300px;
+    height: 200px;
   }
 
   .youtube_subscribe p {
@@ -181,6 +207,14 @@
     margin-bottom: 50px;
   }
 
+  #contact h2 {
+    margin-top: 0;
+  }
+
+  #contact .gridwrapper {
+    align-items: flex-start;
+  }
+
   /************ Music and lyrics ************/
 
   .collapse {
@@ -207,14 +241,15 @@
 
   .album img,
   .single img {
-    width: 11vw;
-    height: 11vw;
-    margin: 1.5vw;
+    width: 8vw;
+    height: 8vw;
+    margin: 1vw;
   }
 
   .album h2,
   .single h2 {
     font-size: 1rem;
+    margin-top: 0;
   }
 
   .album .year,
@@ -224,8 +259,8 @@
 
   .album div,
   .single div {
-    margin: 1.5vw 0;
-    width: 16vw;
+    margin: 1vw 0;
+    width: 15vw;
   }
 
   .album .links,
@@ -236,30 +271,48 @@
 
   /************ Concerts ************/
 
+  .concerts {
+    margin-top: 100px;
+  }
+
+  .concert h2 {
+    margin-top: 0;
+  }
+
+  .concert div {
+    width: 30vw;
+    margin: 1vw;
+  }
+
   .concert img {
-    width: 15vw;
-    height: 15vw;
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .concert .buy {
+    bottom: 1vw;
+    right: 1vw;
   }
 
   .concert .place {
-    bottom: 5vw;
-    left: 19vw;
+    bottom: 3.5vw;
+    left: 13vw;
   }
 
   .concert .time {
     font-size: 0.8rem;
-    bottom: 3vw;
-    left: 19vw;
+    bottom: 2vw;
+    left: 13vw;
   }
 
   .concert .place_icon {
-    bottom: 5vw;
-    left: 17vw;
+    bottom: 3.5vw;
+    left: 11vw;
   }
 
   .concert .time_icon {
-    bottom: 3vw;
-    left: 17vw;
+    bottom: 2vw;
+    left: 11vw;
   }
 
 }

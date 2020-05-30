@@ -6,6 +6,24 @@ body {
   background-color: #100F1C;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #100f1c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fef5f4;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(#d32545, #fe7100);
+}
+
 main {
   margin: 6rem 0 0 0;
   padding: 5vw;
@@ -121,7 +139,7 @@ nav .menu {
 nav .menu li {
   /* al positionerigen af -burger close styres her*/
   text-align: right;
-  margin: 2.5rem 5vw 0 141px;
+  margin: 2.5rem 5vw 0 165px;
 }
 
 nav .menu li:first-child {

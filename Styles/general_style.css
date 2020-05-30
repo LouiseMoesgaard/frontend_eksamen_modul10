@@ -12,7 +12,7 @@ H1 {
 
 H2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #FEF5F4;
@@ -20,7 +20,7 @@ H2 {
 
 H3 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #FEF5F4;
 }
@@ -335,7 +335,7 @@ textarea {
 .album div,
 .single div {
   margin: 5vw 0;
-  width: 45vw;
+  width: 38vw;
 }
 
 .album .links,
