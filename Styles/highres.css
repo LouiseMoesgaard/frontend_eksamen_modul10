@@ -1,0 +1,5 @@
+@media (min-width:1440px) {
+    .sub_menu ul {
+        width: 45%;
+    }
+}
