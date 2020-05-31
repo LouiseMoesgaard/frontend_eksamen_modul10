@@ -1,5 +1,10 @@
 @media (min-width:1440px) {
     .sub_menu ul {
         width: 45%;
+        height: 2.8rem;
+    }
+
+    .marginwrapper {
+        padding: 32vw;
     }
 }
