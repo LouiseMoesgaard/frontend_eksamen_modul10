@@ -1,4 +1,4 @@
-const endpoint = "http://moesgaard-designs.dk/kea/10-eksamen/wordpress/wp-json/wp/v2/";
+const endpoint = "https://moesgaard-designs.dk/kea/10-eksamen/wordpress/wp-json/wp/v2/";
 
 const frontPageOrder = ["landing-page", "about", "videos", "photos", "reviews"];
 
