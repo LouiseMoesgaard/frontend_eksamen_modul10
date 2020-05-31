@@ -248,8 +248,8 @@
 
     .album img,
     .single img {
-        width: 8vw;
-        height: 8vw;
+        width: 30%;
+        height: 100%;
         margin: 1vw;
     }
 
@@ -267,7 +267,7 @@
     .album div,
     .single div {
         margin: 1vw 0;
-        width: 15vw;
+        width: 60%;
     }
 
     .album .links,
