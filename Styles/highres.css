@@ -5,6 +5,6 @@
     }
 
     .marginwrapper {
-        padding: 32vw;
+        margin: 0 32vw;
     }
 }
