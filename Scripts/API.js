@@ -15,6 +15,8 @@ async function getPage() {
         var main = document.querySelector("main");
         main.innerHTML = post.content.rendered;
     } else {
+        var main = document.querySelector("main");
+        main.classList.add("frontpage");
         const response = await fetch(endpoint + "posts?categories=2");
         let posts = await response.json();
         let result = [];
@@ -31,8 +33,6 @@ async function getPage() {
             })
         });
 
-        var main = document.querySelector("main");
-        main.classList.add("frontpage");
         main.innerHTML = result.map(post => post.content.rendered).join();
     }
     APIHook();

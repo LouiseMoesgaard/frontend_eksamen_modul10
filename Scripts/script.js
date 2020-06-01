@@ -13,6 +13,21 @@ document.addEventListener("DOMContentLoaded", function () {
     window.onscroll = function () {
         scrollFunction()
     };
+
+    document.querySelectorAll(".sub_menu a").forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+
+            if (document.querySelector(".frontpage")) {
+                let query = "#" + (e.target.getAttribute("href").split("#")[1]);
+                subNavigation(query);
+
+            } else {
+                window.location = e.target.getAttribute("href");
+            }
+        })
+    })
+
 });
 
 function scrollFunction() {
@@ -37,7 +52,6 @@ function buildLyrics() {
     let template = document.querySelector("template#collapse")
     if (template) {
         getLyrics().then(lyrics => {
-            console.log(lyrics)
             lyrics.forEach(lyric => {
                 let collapse = template.content.cloneNode(true);
                 collapse.querySelector(".title").innerHTML = lyric.title.rendered;
@@ -120,7 +134,7 @@ function buildConcerts() {
 
 }
 
-function buildGalleries() {
+async function buildGalleries() {
     let galleryDOM = document.querySelector("#photos_wrapper");
     let template = document.querySelector("template#gallery");
     if (template) {
@@ -136,11 +150,12 @@ function buildGalleries() {
                 })
 
                 galleryDOM.appendChild(box);
+
             })
 
             document.querySelectorAll(".left").forEach(left => {
 
-                left.addEventListener("click", (e) => {
+                left.addEventListener("click", e => {
                     let gallery = e.target.parentNode;
                     let slide = gallery.querySelector(".slide");
                     let currentOffset = parseInt(slide.style.left, 10);
@@ -159,7 +174,7 @@ function buildGalleries() {
             })
 
             document.querySelectorAll(".right").forEach(right => {
-                right.addEventListener("click", (e) => {
+                right.addEventListener("click", e => {
                     let gallery = e.target.parentNode;
                     let slide = gallery.querySelector(".slide");
                     let currentOffset = parseInt(slide.style.left, 10);
@@ -177,11 +192,28 @@ function buildGalleries() {
                 })
 
             })
-        })
+        });
 
     }
 }
 
+function subNavigation(query) {
+    let target;
+
+    if (!query) {
+        target = window.location.hash;
+    } else {
+        target = query;
+    }
+    if (target) {
+        let element = document.querySelector(target);
+        window.scrollBy(0, element.getBoundingClientRect().top - 150);
+
+    }
+
+
+
+}
 
 function APIHook() {
     buildLyrics();
@@ -189,4 +221,5 @@ function APIHook() {
     buildSingles();
     buildConcerts();
     buildGalleries();
+    setTimeout(() => subNavigation(), 300);
 }
