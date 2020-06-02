@@ -9,6 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
         this.classList.toggle("open_menu")
     })
 
+
+    document.addEventListener("click", (e) => {
+        console.log("hej")
+        if (!e.target.matches(".menu") && !e.target.matches(".menu li a") && !e.target.matches(".burger_open") && !e.target.matches(".burger_open div")) {
+            document.querySelector(".menu").classList.add("hide");
+            this.querySelector(".burger_open").classList.remove("open_menu")
+        }
+    })
+
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
         scrollFunction()
@@ -199,6 +208,14 @@ async function buildGalleries() {
 
 function subNavigation(query) {
     let target;
+    let offset;
+
+    if (window.innerWidth <= 850) {
+        offset = 95;
+
+    } else {
+        offset = 150;
+    }
 
     if (!query) {
         target = window.location.hash;
@@ -207,8 +224,7 @@ function subNavigation(query) {
     }
     if (target) {
         let element = document.querySelector(target);
-        window.scrollBy(0, element.getBoundingClientRect().top - 150);
-
+        window.scrollBy(0, element.getBoundingClientRect().top - offset);
     }
 
 
