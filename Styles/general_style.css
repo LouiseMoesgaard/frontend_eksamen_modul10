@@ -45,7 +45,7 @@ textarea {
 
 .gridwrapper {
     display: grid;
-    grid-template-rows: repeat(auto-fill);
+    grid-template-rows: repeat(auto-fill, auto-fill);
     grid-gap: 50px;
     margin: 50px 0;
 }
@@ -127,6 +127,12 @@ figure img {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.gradientwrapper .video_player img {
+    height: 100%;
+    width: 100%;
+    margin: 0 !important;
 }
 
 .youtube_subscribe p {

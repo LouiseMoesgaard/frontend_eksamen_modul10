@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     document.addEventListener("click", (e) => {
-        console.log("hej")
         if (!e.target.matches(".menu") && !e.target.matches(".menu li a") && !e.target.matches(".burger_open") && !e.target.matches(".burger_open div")) {
             document.querySelector(".menu").classList.add("hide");
             this.querySelector(".burger_open").classList.remove("open_menu")
@@ -90,7 +89,7 @@ function buildAlbums() {
         getAlbums().then(albums => {
             albums.forEach(album => {
                 let box = template.content.cloneNode(true);
-                box.querySelector("img").setAttribute("src", album.image.guid);
+                box.querySelector("img").setAttribute("src", album.image.guid.replace("http", "https"));
                 box.querySelector("h2").innerHTML = album.title.rendered;
                 box.querySelector(".year").innerHTML = album.year.substring(0, 4);
                 box.querySelector(".links .listen").setAttribute("href", album.listen_here);
@@ -109,7 +108,7 @@ function buildSingles() {
         getSingles().then(singles => {
             singles.forEach(single => {
                 let box = template.content.cloneNode(true);
-                box.querySelector("img").setAttribute("src", single.image.guid);
+                box.querySelector("img").setAttribute("src", single.image.guid.replace("http", "https"));
                 box.querySelector("h2").innerHTML = single.title.rendered;
                 box.querySelector(".year").innerHTML = single.year.substring(0, 4);
                 box.querySelector(".links .listen").setAttribute("href", single.listen_here);
@@ -129,7 +128,9 @@ function buildConcerts() {
         getConcerts().then(concerts => {
             concerts.forEach(concert => {
                 let box = template.content.cloneNode(true);
-                box.querySelector("img").setAttribute("src", concert.image_of_place.guid);
+                if (concert.image_of_place) {
+                    box.querySelector("img").setAttribute("src", concert.image_of_place.guid.replace("http", "https"));
+                }
                 box.querySelector("h2").innerHTML = concert.concert_date;
                 box.querySelector(".desc").innerHTML = concert.description;
                 box.querySelector(".place").innerHTML = concert.destination;
@@ -154,7 +155,8 @@ async function buildGalleries() {
                 box.querySelector("h2").innerHTML = gallery.title.rendered;
                 gallery.images.forEach(image => {
                     let img = document.createElement("img");
-                    img.setAttribute("src", image.guid);
+                    img.setAttribute("src", image.guid.replace("http", "https"));
+                    img.setAttribute("alt", "gallery image");
                     box.querySelector(".slide").appendChild(img);
                 })
 
@@ -226,12 +228,22 @@ function subNavigation(query) {
         let element = document.querySelector(target);
         window.scrollBy(0, element.getBoundingClientRect().top - offset);
     }
+}
+
+function embedYoutube() {
+    document.querySelectorAll(".video_player").forEach(video => {
+        video.addEventListener("click", () => {
+            video.innerHTML = `<iframe src="https://www.youtube.co/embed/${video.getAttribute("data-youtube")}?autoplay=1"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>`;
+        })
+
+    })
 
 
 
 }
 
 function APIHook() {
+    embedYoutube();
     buildLyrics();
     buildAlbums();
     buildSingles();
