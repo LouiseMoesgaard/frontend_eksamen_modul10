@@ -7,4 +7,12 @@
     .marginwrapper {
         margin: 0 32vw;
     }
+
+    .gradientwrapper .video_player {
+        height: 225px;
+    }
+
+    .gradientwrapper .video_player.large {
+        height: 500px;
+    }
 }

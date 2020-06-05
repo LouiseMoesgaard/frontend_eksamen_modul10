@@ -2,372 +2,402 @@
 
 @media (min-width:600px) {
 
-  /** Layout **/
-  main {
-    margin: 8rem 0 0 0;
-    padding: 8vw;
-  }
+    /** Layout **/
+    main {
+        margin: 8rem 0 0 0;
+        padding: 8vw;
+    }
 
-  .marginwrapper {
-    padding: 0 8vw 8vw 8vw;
-  }
+    .marginwrapper {
+        padding: 0 8vw 8vw 8vw;
+    }
 
-  img {
-    margin-top: 20px;
-  }
+    img {
+        margin-top: 20px;
+    }
 
-  .menu_wrapper {
-    padding: 2vw 2vw;
-  }
+    .menu_wrapper {
+        padding: 2vw 2vw;
+    }
 
-  .logo H1 {
-    font-size: 1.8rem;
-    line-height: 1.8rem;
-  }
+    .logo H1 {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
 
-  .burger_open {
-    width: 2rem;
-    height: 2rem;
-    margin: 5px auto 0 auto;
-  }
+    .burger_open {
+        width: 2rem;
+        height: 2rem;
+        margin: 5px auto 0 auto;
+    }
 
-  .burger_open div {
-    margin-bottom: 8px;
-  }
+    .burger_open div {
+        margin-bottom: 8px;
+    }
 
-  .burger_close {
-    width: 2rem;
-  }
+    .burger_close {
+        width: 2rem;
+    }
 
-  nav .menu {
-    top: 7.8vw;
-  }
+    nav .menu {
+        top: 7.8vw;
+    }
 
-  nav .menu li {
-    margin: 5rem 5vw 0 162px;
-  }
+    nav .menu li {
+        margin: 5rem 5vw 0 162px;
+    }
 
-  nav .menu li:first-child {
-    margin-top: 120px;
-  }
+    nav .menu li:first-child {
+        margin-top: 120px;
+    }
 
-  .sub_menu ul {
-    height: 4vw;
-  }
+    .sub_menu ul {
+        height: 4vw;
+    }
 
-  a,
-  a:active,
-  a:link,
-  a:visited {
-    line-height: 3vw;
-  }
+    a,
+    a:active,
+    a:link,
+    a:visited {
+        line-height: 3vw;
+    }
 
-  .h3_footer {
-    font-size: 1.2rem;
-  }
-
-
-  /********* Frontpage ************/
-
-  /** Splash **/
-
-  .splash_text {
-    bottom: 200px;
-  }
-
-  .splash.social {
-    grid-template-columns: 75px;
-    grid-template-rows: 75px 75px 75px 75px 75px 75px;
-  }
-
-  .splash.social img {
-    width: 2.5rem;
-  }
-
-  /** About **/
+    .h3_footer {
+        font-size: 1.2rem;
+    }
 
 
-  /** Videos **/
+    /********* Frontpage ************/
 
-  .gradientwrapper .video_player {
-    height: 300px;
-  }
+    /** Splash **/
 
-  .youtube_subscribe {
-    text-align: center;
-  }
+    .splash_text {
+        bottom: 200px;
+    }
 
-  .youtube_subscribe p {
-    /** subscribekknap **/
-    display: inline-block;
-    width: 35vw;
-    text-align: start;
-    margin-right: 5px;
-  }
+    .splash.social {
+        grid-template-columns: 75px;
+        grid-template-rows: 75px 75px 75px 75px 75px 75px;
+    }
 
-  /** Photos **/
+    .splash.social img {
+        width: 2.5rem;
+    }
 
-
-  /** revirews **/
+    /** About **/
 
 
-  /************ Contact  ************/
+    /** Videos **/
 
-  #contact.marginwrapper {
-    padding-bottom: 0;
-  }
+    .gradientwrapper .video_player {
+        height: 350px;
+    }
 
-  /************ Music and lyrics ************/
+    .gradientwrapper .video_player.large {
+        height: 350px;
+    }
 
-  .collapse {
-    max-height: 8vw;
-    padding: 0 1vw 1vw;
-  }
+    .gradientwrapper .video_player .play {
+        top: 40%;
+        left: 45%;
 
-  .collapse .title {
-    line-height: 8vw;
+    }
 
-  }
+    .gradientwrapper .video_player.large .play {
+        top: 40%;
+        left: 45%;
+    }
 
-  .collapse .arrow {
-    width: 4vw;
-    height: 4vw;
-    margin: 2vw 10px;
-  }
+    .youtube_subscribe {
+        text-align: center;
+    }
 
-  .album img,
-  .single img {
-    width: 16vw;
-    height: 16vw;
-    margin: 2vw;
-  }
+    .youtube_subscribe p {
+        /** subscribekknap **/
+        display: inline-block;
+        width: 35vw;
+        text-align: start;
+        margin-right: 5px;
+    }
 
-  .album h2,
-  .single h2 {
-    font-size: 1.2rem;
-  }
+    /** Photos **/
 
-  .album .year,
-  .single .year {
-    font-size: 1rem;
-  }
 
-  .album div,
-  .single div {
-    margin: 2vw 0;
-    width: 45vw;
-  }
+    /** revirews **/
 
-  .album .links,
-  .single .links {
-    bottom: 2vw;
-    right: 2vw;
-  }
 
-  .gridwrapper.lyrics,
-  .gradientwrapper.singles,
-  .gradientwrapper.albums {
-    align-items: flex-start;
-  }
+    /************ Contact  ************/
 
-  /************ Concerts ************/
+    #contact.marginwrapper {
+        padding-bottom: 0;
+    }
 
-  .concert img {
-    width: 18vw;
-    height: 18vw;
-    margin: 0;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    object-fit: cover;
-    object-position: center;
-  }
+    /************ Music and lyrics ************/
 
-  .concert h2 {
-    text-align: start;
-  }
+    .collapse {
+        max-height: 8vw;
+        padding: 0 1vw 1vw;
+    }
 
-  .concert div {
-    width: 50vw;
-  }
+    .collapse .title {
+        line-height: 8vw;
 
-  .concert .desc {
-    font-size: 1rem;
-    line-height: 1.1rem;
-  }
+    }
 
-  .concert .place {
-    font-size: 0.8rem;
-    bottom: 6vw;
-    left: 22vw;
-  }
+    .collapse .arrow {
+        width: 4vw;
+        height: 4vw;
+        margin: 2vw 10px;
+    }
 
-  .concert .time {
-    font-size: 0.8rem;
-    bottom: 3vw;
-    left: 22vw;
-  }
+    .album img,
+    .single img {
+        width: 16vw;
+        height: 16vw;
+        margin: 2vw;
+    }
 
-  .concert .place_icon {
-    width: 15px;
-    height: 15px;
-    bottom: 6vw;
-    left: 19vw;
-  }
+    .album h2,
+    .single h2 {
+        font-size: 1.2rem;
+    }
 
-  .concert .time_icon {
-    width: 15px;
-    height: 15px;
-    bottom: 3vw;
-    left: 19vw;
-  }
+    .album .year,
+    .single .year {
+        font-size: 1rem;
+    }
 
-  .concert .buy {
-    bottom: 2vw;
-    right: 2vw;
-  }
+    .album div,
+    .single div {
+        margin: 2vw 0;
+        width: 45vw;
+    }
+
+    .album .links,
+    .single .links {
+        bottom: 2vw;
+        right: 2vw;
+    }
+
+    .gridwrapper.lyrics,
+    .gradientwrapper.singles,
+    .gradientwrapper.albums {
+        align-items: flex-start;
+    }
+
+    /************ Concerts ************/
+
+    .concert img {
+        width: 18vw;
+        height: 18vw;
+        margin: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .concert h2 {
+        text-align: start;
+    }
+
+    .concert div {
+        width: 50vw;
+    }
+
+    .concert .desc {
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+
+    .concert .place {
+        font-size: 0.8rem;
+        bottom: 6vw;
+        left: 22vw;
+    }
+
+    .concert .time {
+        font-size: 0.8rem;
+        bottom: 3vw;
+        left: 22vw;
+    }
+
+    .concert .place_icon {
+        width: 15px;
+        height: 15px;
+        bottom: 6vw;
+        left: 19vw;
+    }
+
+    .concert .time_icon {
+        width: 15px;
+        height: 15px;
+        bottom: 3vw;
+        left: 19vw;
+    }
+
+    .concert .buy {
+        bottom: 2vw;
+        right: 2vw;
+    }
 
 }
 
 
 @media (min-width:800px) {
-  /** Layout **/
+    /** Layout **/
 
-  nav .menu {
-    top: 7.3vw;
-  }
+    nav .menu {
+        top: 7.3vw;
+    }
 
-  nav .menu li {
-    margin: 4rem 5vw 0 162px;
-  }
+    nav .menu li {
+        margin: 4rem 5vw 0 162px;
+    }
 
-  nav .menu li:first-child {
-    margin-top: 80px;
-  }
+    nav .menu li:first-child {
+        margin-top: 80px;
+    }
 
-  .sub_menu ul {
-    height: 3vw;
-  }
+    .sub_menu ul {
+        height: 3vw;
+    }
 
-  .gridwrapper {
-    grid-gap: 50px;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
+    .gridwrapper {
+        grid-gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
 
-  .gridwrapper img {
-    margin-top: 0;
-  }
+    .gridwrapper img {
+        margin-top: 0;
+    }
 
-  /********* Frontpage ************/
+    /********* Frontpage ************/
 
-  /** Splash **/
+    /** Splash **/
 
-  .splash_text {
-    bottom: 150px;
-  }
+    .splash_text {
+        bottom: 150px;
+    }
 
-  .splash.social {
-    grid-template-columns: 75px;
-    grid-template-rows: 75px 75px 75px 75px 75px 75px;
-    margin-top: 30px;
-  }
+    .splash.social {
+        grid-template-columns: 75px;
+        grid-template-rows: 75px 75px 75px 75px 75px 75px;
+        margin-top: 30px;
+    }
 
-  /** About **/
-
-
-  /** Videos **/
-
-  .gradientwrapper .video_player {
-    height: 250px;
-  }
-
-  .youtube_subscribe p {
-    width: 25vw;
-  }
-
-  /** Photos **/
-
-  /** revirews **/
+    /** About **/
 
 
-  /************ Contact  ************/
-  #contact h3 {
-    margin-bottom: 50px;
-  }
+    /** Videos **/
 
-  /************ Music and lyrics ************/
+    .gradientwrapper .video_player {
+        height: 210px;
+    }
 
-  .collapse {
-    max-height: 6vw;
-    padding: 0 1vw 1vw;
-  }
+    .gradientwrapper .video_player.large {
+        height: 470px;
+    }
 
-  .collapse .title {
-    line-height: 6vw;
+    .gradientwrapper .video_player .play {
+        top: 40%;
+        left: 40%;
 
-  }
+    }
 
-  .collapse .arrow {
-    width: 3vw;
-    height: 3vw;
-    margin: 1.5vw 10px;
-  }
+    .gradientwrapper .video_player.large .play {
+        top: 45%;
+        left: 45%;
+    }
 
-  .album img,
-  .single img {
-    width: 11vw;
-    height: 11vw;
-    margin: 1.5vw;
-  }
+    .youtube_subscribe p {
+        width: 25vw;
+    }
 
-  .album h2,
-  .single h2 {
-    font-size: 1rem;
-  }
+    /** Photos **/
 
-  .album .year,
-  .single .year {
-    font-size: 0.8rem;
-  }
+    /** revirews **/
 
-  .album div,
-  .single div {
-    margin: 1.5vw 0;
-    width: 16vw;
-  }
 
-  .album .links,
-  .single .links {
-    bottom: 1vw;
-    right: 1vw;
-  }
+    /************ Contact  ************/
+    #contact h3 {
+        margin-bottom: 50px;
+    }
 
-  /************ Concerts ************/
+    /************ Music and lyrics ************/
 
-  .concert img {
-    width: 15vw;
-    height: 15vw;
-  }
+    .collapse {
+        max-height: 6vw;
+        padding: 0 1vw 1vw;
+    }
 
-  .concert .place {
-    bottom: 5vw;
-    left: 19vw;
-  }
+    .collapse .title {
+        line-height: 6vw;
 
-  .concert .time {
-    font-size: 0.8rem;
-    bottom: 3vw;
-    left: 19vw;
-  }
+    }
 
-  .concert .place_icon {
-    bottom: 5vw;
-    left: 17vw;
-  }
+    .collapse .arrow {
+        width: 3vw;
+        height: 3vw;
+        margin: 1.5vw 10px;
+    }
 
-  .concert .time_icon {
-    bottom: 3vw;
-    left: 17vw;
-  }
+    .album img,
+    .single img {
+        width: 11vw;
+        height: 11vw;
+        margin: 1.5vw;
+    }
+
+    .album h2,
+    .single h2 {
+        font-size: 1rem;
+    }
+
+    .album .year,
+    .single .year {
+        font-size: 0.8rem;
+    }
+
+    .album div,
+    .single div {
+        margin: 1.5vw 0;
+        width: 16vw;
+    }
+
+    .album .links,
+    .single .links {
+        bottom: 1vw;
+        right: 1vw;
+    }
+
+    /************ Concerts ************/
+
+    .concert img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .concert .place {
+        bottom: 5vw;
+        left: 19vw;
+    }
+
+    .concert .time {
+        font-size: 0.8rem;
+        bottom: 3vw;
+        left: 19vw;
+    }
+
+    .concert .place_icon {
+        bottom: 5vw;
+        left: 17vw;
+    }
+
+    .concert .time_icon {
+        bottom: 3vw;
+        left: 17vw;
+    }
 
 }

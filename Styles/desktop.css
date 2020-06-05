@@ -174,12 +174,28 @@
     }
 
     /** About **/
-    #about .video_player.large {
-        height: 450px;
-    }
+
 
     /** Videos **/
+    .video_player {
+        height: 185px;
+    }
 
+    .gradientwrapper .video_player .play {
+        top: 30%;
+        left: 40%;
+
+    }
+
+    .gradientwrapper .video_player.large .play {
+        top: 40%;
+        left: 45%;
+    }
+
+
+    .video_player.large {
+        height: 450px;
+    }
 
     .youtube_subscribe p {
         width: 25vw;
